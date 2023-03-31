@@ -1,15 +1,28 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { sendToVercelAnalytics } from './vitals';
+import React from "react";
+import ReactDOM from "react-dom";
+import "./style/index.css";
+import { App } from "./components/App";
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+ReactDOM.render(<App />, document.getElementById("root"));
 
-reportWebVitals(sendToVercelAnalytics);
+
+/*
+function Contenido({ titulo, children}){
+
+//Obtener datos desde props
+//function Contenido(props){
+//console.log(props);
+// const titulo=props.titulo
+// const contenido=props.contenido
+
+//Deconstruyendo props
+//const { titulo, contenido}=props;
+
+  return (
+  <div className="container">
+    <h1>{titulo}</h1>
+    <div>{children}</div>
+  </div>
+  )
+}
+*/
